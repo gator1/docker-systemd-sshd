@@ -1,4 +1,5 @@
-# vkill/ubuntu-systemd-sshd
+# from vkill/ubuntu-systemd-sshd
+# gator1/ubuntu-systemd-sshd
 
 [`solita/ubuntu-systemd`](https://hub.docker.com/r/solita/ubuntu-systemd/) + an SSH server.
 
@@ -6,7 +7,11 @@
 
 * `latest`
 
-## Running
+## Reason 
+
+```
+need to allow root login. This is going to be used for ceph in docker. 
+```
 
 ### For Docker
 
@@ -32,7 +37,7 @@ $ docker exec systemd-sshd ps aux
 ## Test
 
 ```
-$ git clone git@github.com:vkill/docker-systemd-sshd.git
+$ git clone git@github.com:gator1/docker-systemd-sshd.git
 $ cd docker-systemd-sshd
 
 $ docker-compose up -d
@@ -52,6 +57,6 @@ MIT / BSD
 Author Information
 ------------------
 
-vkill <vkill.net@gmail.com>
+gator1, garyxia@gmail.com
 
 &copy; 2017
